@@ -1,0 +1,15 @@
+.dark .bg-dark-bg {
+  background-color: theme('colors.dark-bg');
+}
+
+.dark .text-dark-text {
+  color: theme('colors.dark-text');
+}
+
+.bg-light-bg {
+  background-color: theme('colors.light-bg');
+}
+
+.text-light-text {
+  color: theme('colors.light-text');
+}
