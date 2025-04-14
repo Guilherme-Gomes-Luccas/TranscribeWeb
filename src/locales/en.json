@@ -1,0 +1,17 @@
+{
+    "title": "Transcribe audio quickly and easily",
+    "description": "Just upload your audio file and receive the transcription instantly.",
+    "processing": "Processing audio...",
+    "error": "Error uploading or processing the file",
+    "noFile": "No file uploaded yet.",
+    "summary": "Summary:",
+    "transcription": "Transcription:",
+    "minimize": "Minimize",
+    "expand": "Expand",
+    "homePage": "Transcribe Web",
+    "dropzoneText": "Drag and drop your file here",
+    "uploadButton": "Upload file",
+    "darkMode": "🌙 Dark Mode",
+    "lightMode": "☀️ Light Mode"
+}
+  

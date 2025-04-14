@@ -1,0 +1,17 @@
+{
+    "title": "Transcreva áudios de forma rápida e simples",
+    "description": "Basta enviar seu arquivo de áudio e receba a transcrição em instantes.",
+    "processing": "Processando áudio...",
+    "error": "Erro ao enviar ou processar o arquivo",
+    "noFile": "Nenhum arquivo enviado ainda.",
+    "summary": "Resumo:",
+    "transcription": "Transcrição:",
+    "minimize": "Minimizar",
+    "expand": "Expandir",
+    "homePage": "Transcribe Web",
+    "dropzoneText": "Arraste e solte o arquivo aqui",
+    "uploadButton": "Enviar arquivo",
+    "darkMode": "🌙 Modo escuro",
+    "lightMode": "☀️ Modo claro"
+}
+  
