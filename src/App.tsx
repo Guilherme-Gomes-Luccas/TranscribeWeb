@@ -4,8 +4,9 @@ import audioToText from './assets/audioToText.png';
 import Dropzone from './components/Dropzone';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import './i18n'; // Importante: inicializa as traduções
+import './i18n';
 import Footer from './components/Footer';
+import ProgressBar from './components/ProgressBar';
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -13,29 +14,40 @@ function App() {
   const [transcript, setTranscript] = useState('');
   const [summary, setSummary] = useState('');
   const [loading, setLoading] = useState(false);
+  const [progress, setProgress] = useState(0);
   const [error, setError] = useState('');
   const [showTranscript, setShowTranscript] = useState(false);
-
   const { t } = useTranslation();
 
   const handleFileAccepted = async (file: File) => {
     const formData = new FormData();
     formData.append('file', file);
-
+  
     setLoading(true);
     setError('');
     setTranscript('');
     setSummary('');
     setShowTranscript(false);
-
+    setProgress(0);
+  
+    let currentProgress = 0;
+    const interval = setInterval(() => {
+      currentProgress += Math.random() * 3; 
+      if (currentProgress >= 95) {
+        clearInterval(interval);
+        currentProgress = 95;
+      }
+      setProgress(currentProgress);
+    }, 200); 
+  
     try {
       const response = await fetch(`${API_URL}/api/upload`, {
         method: 'POST',
         body: formData,
       });
-
+  
       if (!response.ok) throw new Error('Erro ao enviar o arquivo');
-
+  
       const result = await response.json();
       setTranscript(result.transcript ?? t('noTranscript'));
       setSummary(result.summary ?? t('noSummary'));
@@ -43,7 +55,12 @@ function App() {
       console.error('Erro no upload:', error);
       setError(t('uploadError'));
     } finally {
-      setLoading(false);
+      clearInterval(interval);
+      setProgress(100); // Agora sim vai para 100% real
+      setTimeout(() => {
+        setProgress(0); // Reseta depois de um tempo
+        setLoading(false);
+      }, 800);
     }
   };
 
@@ -58,9 +75,7 @@ function App() {
               <h2 className="text-3xl md:text-4xl font-bold leading-snug">
                 {t('title')}
               </h2>
-              <p className="text-lg opacity-80">
-                {t('description')}
-              </p>
+              <p className="text-lg opacity-80">{t('description')}</p>
             </div>
             <img
               src={audioToText}
@@ -73,7 +88,10 @@ function App() {
         <main className="flex flex-col items-center gap-6 px-4 pb-16">
           <Dropzone onFileAccepted={handleFileAccepted} />
 
-          {loading && <p className="text-blue-500">{t('processing')}</p>}
+          {loading && (
+            <ProgressBar progress={progress} label={t('processing')} />
+          )}
+
           {error && <p className="text-red-500">{error}</p>}
           {!loading && !transcript && !error && (
             <p className="text-gray-500">{t('noFile')}</p>
@@ -84,7 +102,9 @@ function App() {
               {summary && (
                 <div>
                   <h3 className="font-bold text-xl">{t('summary')}</h3>
-                  <p className="bg-gray-100 dark:bg-gray-800 p-4 rounded">{summary}</p>
+                  <p className="bg-gray-100 dark:bg-gray-800 p-4 rounded">
+                    {summary}
+                  </p>
                 </div>
               )}
               {transcript && (
