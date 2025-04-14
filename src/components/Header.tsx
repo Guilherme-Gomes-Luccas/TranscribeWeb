@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           onClick={toggleLanguage}
           className="p-2 rounded-full bg-gray-300 dark:bg-gray-900 text-sm font-bold"
         >
-          {i18n.language === 'pt' ? 'PT-BR' : 'EN'}
+          {i18n.language === 'pt' ? 'PT-BR' : 'ENG'}
         </button>
         <ThemeToggle />
       </div>
