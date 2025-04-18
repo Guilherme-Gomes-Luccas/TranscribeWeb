@@ -14,6 +14,13 @@
     "darkMode": "🌙 Modo escuro",
     "lightMode": "☀️ Modo claro",
     "madeby": "Feito por",
-    "soon": "Em breve"
+    "soon": "Em breve",
+    "uploading": "Enviando arquivo...",
+    "extracting": "Extraindo áudio...",
+    "splitting": "Dividindo áudio em partes...",
+    "transcribing": "Transcrevendo áudio...",
+    "summarizing": "Resumindo transcrição...",
+    "finished": "Processo finalizado!",
+    "error_processing": "Ocorreu um erro no processamento."
 }
   
