@@ -10,10 +10,12 @@
     "expand": "Expandir",
     "homePage": "Transcribe Web",
     "dropzoneText": "Arraste e solte o arquivo aqui",
+    "audioSizeText": "Arquivos de até 50 MB (≈ 15 min de áudio)",
     "uploadButton": "Enviar arquivo",
     "darkMode": "🌙 Modo escuro",
     "lightMode": "☀️ Modo claro",
     "madeby": "Feito por",
+    "resume": "Currículo",
     "soon": "Em breve",
     "uploading": "Enviando arquivo...",
     "extracting": "Extraindo áudio...",
@@ -21,6 +23,7 @@
     "transcribing": "Transcrevendo áudio...",
     "summarizing": "Resumindo transcrição...",
     "finished": "Processo finalizado!",
-    "error_processing": "Ocorreu um erro no processamento."
+    "error_processing": "Ocorreu um erro no processamento.",
+    "fileTooLarge": "O arquivo é muito grande. Máximo permitido: 50MB"
 }
   

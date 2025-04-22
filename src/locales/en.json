@@ -10,10 +10,12 @@
     "expand": "Expand",
     "homePage": "Transcribe Web",
     "dropzoneText": "Drag and drop your file here",
+    "audioSizeText": "Files up to 50 MB (≈ 15 min of audio)",
     "uploadButton": "Upload file",
     "darkMode": "🌙 Dark Mode",
     "lightMode": "☀️ Light Mode",
     "madeby": "Made by",
+    "resume": "Resume",
     "soon": "Coming soon",
     "uploading": "Uploading file...",
     "extracting": "Extracting audio...",
@@ -21,6 +23,7 @@
     "transcribing": "Transcribing audio...",
     "summarizing": "Summarizing transcription...",
     "finished": "Process completed!",
-    "error_processing": "An error occurred during processing."
+    "error_processing": "An error occurred during processing.",
+    "fileTooLarge": "The file is very large. Maximum allowed: 50MB"
 }
     

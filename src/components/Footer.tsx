@@ -13,10 +13,10 @@ const Footer: React.FC = () => {
                 Email
             </a>
             <a href="https://www.linkedin.com/in/guilherme-gomes-luccas/" target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-500 dark:text-blue-400">
-                LinkedIn
+                Linkedin
             </a>
             <a href="" target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-500 dark:text-blue-400">
-                Currículo ({t('soon')})
+                {t('resume')} ({t('soon')})
             </a>
         </div>
         </footer>
