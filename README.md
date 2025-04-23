@@ -5,9 +5,9 @@
 Esse projeto consiste em uma plataforma web capaz de retornar a transcrição e um resumo feito por uma API utilizando IA;
 
 # 🔨 Funcionalidades
-- `Enviar um áudio`: O front-end feito em React com typeScript permite o envio de arquivos de áudios por meio do componente dropzone;
+- `Enviar um áudio`: O front-end feito em React com typeScript permite o envio de arquivos de áudio por meio do componente dropzone;
   
-- `Trocar lingua`: Localizado no header do site, há uma opção para trocar a linguagem entre PT-BR e ENG;
+- `Trocar língua`: Localizado no header do site, há uma opção para trocar a linguagem entre PT-BR e ENG;
 
 - `Trocar tema`: Localizado no header do site, existe a opção de troca de tema, possibilitando a troca entre temas "dark' e 'light';
 
