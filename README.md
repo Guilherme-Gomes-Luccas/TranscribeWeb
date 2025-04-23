@@ -19,3 +19,4 @@ Esse projeto consiste em uma plataforma web capaz de retornar a transcrição e 
 
 # 🖥️ Onde acessar o projeto
 <a href="https://transcribewebfrontend.vercel.app/">CLique aqui para visualizar o projeto</a>
+<img src="images/TranscribeWeb.png" alt="Transcribe Web" width="400"/>
