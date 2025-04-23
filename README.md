@@ -1,55 +1,21 @@
-# React + TypeScript + Vite
+# TranscribeWEB
+`finalizado`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 Descrição do projeto
+Esse projeto consiste em uma plataforma web capaz de retornar a transcrição e um resumo feito por uma API utilizando IA;
 
-Currently, two official plugins are available:
+# 🔨 Funcionalidades
+- `Enviar um áudio`: O front-end feito em React com typeScript permite o envio de arquivos de áudios por meio do componente dropzone;
+  
+- `Trocar lingua`: Localizado no header do site, há uma opção para trocar a linguagem entre PT-BR e ENG;
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `Trocar tema`: Localizado no header do site, existe a opção de troca de tema, possibilitando a troca entre temas "dark' e 'light';
 
-## Expanding the ESLint configuration
+# 📖 Aprendizados
+- Utilização do componente Dropzone
+- Utilização do framework react-i18next para a troca de linguagem dinâmica do site
+- Utilização eficaz do tailwind css
+- Tornar o código principal mais limpo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# TranscribeWeb
+# 🖥️ Onde acessar o projeto
+<a href="https://transcribewebfrontend.vercel.app/">CLique aqui para visualizar o projeto</a>
